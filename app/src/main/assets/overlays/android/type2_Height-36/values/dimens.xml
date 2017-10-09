@@ -2,5 +2,5 @@
 <resources>
     <dimen name="navigation_bar_height">36.0dip</dimen>
     <dimen name="navigation_bar_height_landscape">36.0dip</dimen>
-	<dimen name="navigation_bar_width">36.0dip</dimen>
+    <dimen name="navigation_bar_width">36.0dip</dimen>
 </resources>

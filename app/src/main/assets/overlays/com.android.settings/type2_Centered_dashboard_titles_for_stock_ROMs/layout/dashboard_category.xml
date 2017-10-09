@@ -27,6 +27,7 @@
         android:layout_height="match_parent"
         android:singleLine="true"
         android:ellipsize="marquee"
+        android:textAllCaps="true"
         android:gravity="center_vertical|center_horizontal"
         android:textAppearance="@*com.android.settings:style/TextAppearance.CategoryTitle"
         android:textAlignment="center"

@@ -8,7 +8,7 @@
  * Change this value to JNI_TRUE if you would like to enable anti piracy
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getAPStatus(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getAPStatus(JNIEnv *env) {
     return JNI_FALSE;
 }
 
@@ -20,7 +20,7 @@ Java_substratum_theme_template_SubstratumLauncher_getAPStatus(JNIEnv *env) {
  * and input the proper number! This is so that you get your own specialized set of variables!
  */
 JNIEXPORT jstring JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getBase64Key(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getBase64Key(JNIEnv *env) {
     // TODO: This must be done!
     char BASE_64_LICENSE_KEY[000] = "";
     return (*env)->NewStringUTF(env, BASE_64_LICENSE_KEY);
@@ -34,7 +34,7 @@ Java_substratum_theme_template_SubstratumLauncher_getBase64Key(JNIEnv *env) {
  * All release production signature prefixes have the length of 28!
  */
 JNIEXPORT jstring JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getAPKSignatureProduction(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getAPKSignatureProduction(JNIEnv *env) {
     char APK_SIGNATURE_PRODUCTION[28] = "";
     return (*env)->NewStringUTF(env, APK_SIGNATURE_PRODUCTION);
 }
@@ -45,7 +45,7 @@ Java_substratum_theme_template_SubstratumLauncher_getAPKSignatureProduction(JNIE
  * Change this value to JNI_TRUE if you would like to enable internet check
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getInternetCheck(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getInternetCheck(JNIEnv *env) {
     return JNI_FALSE;
 }
 
@@ -55,7 +55,7 @@ Java_substratum_theme_template_SubstratumLauncher_getInternetCheck(JNIEnv *env) 
  * Change this value to JNI_TRUE if you would like to enable this check
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getGooglePlayRequirement(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getGooglePlayRequirement(JNIEnv *env) {
     return JNI_FALSE;
 }
 
@@ -65,7 +65,7 @@ Java_substratum_theme_template_SubstratumLauncher_getGooglePlayRequirement(JNIEn
  * Change this value to JNI_TRUE if you would like to enable this check
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getAmazonAppStoreRequirement(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getAmazonAppStoreRequirement(JNIEnv *env) {
     return JNI_FALSE;
 }
 
@@ -75,7 +75,7 @@ Java_substratum_theme_template_SubstratumLauncher_getAmazonAppStoreRequirement(J
  * Change this value to JNI_TRUE if you would like to enable blacklist check
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getBlacklistedApplications(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getBlacklistedApplications(JNIEnv *env) {
     return JNI_FALSE;
 }
 
@@ -90,7 +90,7 @@ Java_substratum_theme_template_SubstratumLauncher_getBlacklistedApplications(JNI
  *          if there are specific bugs unreproducible on the main stream of APKs.
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_allowThirdPartySubstratumBuilds(JNIEnv *env) {
+Java_me_msfjarvis_substweaks_SubstratumLauncher_allowThirdPartySubstratumBuilds(JNIEnv *env) {
     return JNI_TRUE;
 }
 
@@ -100,8 +100,8 @@ Java_substratum_theme_template_SubstratumLauncher_allowThirdPartySubstratumBuild
  * Change Line 94 to JNI_FALSE for official Samsung support!
  */
 JNIEXPORT jboolean JNICALL
-Java_substratum_theme_template_SubstratumLauncher_getSamsungSupport(JNIEnv *env) {
-    return Java_substratum_theme_template_SubstratumLauncher_allowThirdPartySubstratumBuilds(env);
+Java_me_msfjarvis_substweaks_SubstratumLauncher_getSamsungSupport(JNIEnv *env) {
+    return Java_me_msfjarvis_substweaks_SubstratumLauncher_allowThirdPartySubstratumBuilds(env);
 }
 
 #pragma clang diagnostic pop
